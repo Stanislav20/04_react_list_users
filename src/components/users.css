@@ -24,9 +24,18 @@ svg {
   list-style: none;
   padding: 0;
   margin: 0;
-  overflow: auto;
+  /* overflow: auto; */
   height: calc(100% - 130px);
   margin-top: 30px;
+}
+
+.skeleton-list {
+  height: calc(100% - 130px);
+  margin-top: 30px;
+}
+
+.skeleton-list svg {
+  margin-bottom: 15px;
 }
 
 .send-invite-btn {
