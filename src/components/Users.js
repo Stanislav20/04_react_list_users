@@ -3,7 +3,7 @@ import { Skeleton } from './Skeleton';
 import User from './User';
 import './users.css';
 
-function Users({ items, isLoading, searchValue, onChangeSearchValue }) {
+function Users({ users, isLoading, searchValue, onChangeSearchValue }) {
   return (
     <>
       <div className="search">
@@ -21,7 +21,12 @@ function Users({ items, isLoading, searchValue, onChangeSearchValue }) {
 				) : (
 					<ul className="users-list">
 						{
-							items.map((item, index) => <User key={index} item={item}/>)
+							users.filter((obj) => {
+								const fullName = (obj.first_name + ' ' + obj.last_name).toLowerCase();
+								if (fullName.includes(searchValue.toLowerCase()) || (obj.email.toLowerCase().includes(searchValue.toLowerCase()))) {
+									return true
+								}
+							}).map((obj, index) => <User key={index} obj={obj}/>)
 						}
 					</ul>
 				)}

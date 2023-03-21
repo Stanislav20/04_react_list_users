@@ -5,14 +5,14 @@ import Success from './components/Success';
 import Users from './components/Users';
 
 function App() {
-	const [items, setItems] = useState([])
+	const [users, setUsers] = useState([])
 	const [isLoading, setIsLoading] = useState(true)
 	const [searchValue, setSearchValue] = useState('')
 
 	useEffect(() => {
 		fetch('https://reqres.in/api/users')
 		.then((res) => res.json())
-		.then((json) => setItems(json.data))
+		.then((json) => setUsers(json.data))
 		.catch((error) => console.log(error.message))
 		.finally(() => setIsLoading(false))
 	}, [])
@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <Users
-				items={items} 
+				users={users} 
 				isLoading={isLoading} 
 				searchValue={searchValue} 
 				onChangeSearchValue={onChangeSearchValue} />
