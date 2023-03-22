@@ -1,13 +1,13 @@
 import React from 'react';
 import './Success.css'
 
-function Success() {
+function Success({ count }) {
   return (
     <div class="success-block">
       <img src="/assets/success.svg" alt="Success" />
       <h3>Успешно!</h3>
-      <p>Всем пользователям отправлено приглашение.</p>
-      <button className="send-invite-btn">Назад</button>
+			<p>{`${count>1 ? `Всем ${count} пользователям отправлено приглашение.` : 'Одному пользователю отправлено приглашение.'}`}</p>
+      <button onClick={() => window.location.reload()}className="send-invite-btn">Назад</button>
     </div>
   );
 };

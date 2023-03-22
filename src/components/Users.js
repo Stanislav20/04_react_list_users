@@ -3,7 +3,7 @@ import { Skeleton } from './Skeleton';
 import User from './User';
 import './users.css';
 
-function Users({ users, isLoading, searchValue, onChangeSearchValue }) {
+function Users({ users, isLoading, searchValue, onChangeSearchValue, invites, onClickInvite, onClickSendInvites }) {
   return (
     <>
       <div className="search">
@@ -26,11 +26,13 @@ function Users({ users, isLoading, searchValue, onChangeSearchValue }) {
 								if (fullName.includes(searchValue.toLowerCase()) || (obj.email.toLowerCase().includes(searchValue.toLowerCase()))) {
 									return true
 								}
-							}).map((obj, index) => <User key={index} obj={obj}/>)
+							}).map((obj, index) => <User key={index} obj={obj} onClickInvite={onClickInvite} isInvited={invites.includes(obj.id)}/>)
 						}
 					</ul>
 				)}
-      <button className="send-invite-btn">Отправить приглашение</button>
+      {
+				invites.length>0 && <button className="send-invite-btn" onClick={onClickSendInvites} >Отправить приглашение</button>
+			}
     </>
   );
 }
