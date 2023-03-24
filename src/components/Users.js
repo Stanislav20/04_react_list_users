@@ -17,6 +17,8 @@ function Users({ users, isLoading, searchValue, onChangeSearchValue, invites, on
 						<Skeleton />
 						<Skeleton />
 						<Skeleton />
+						<Skeleton />
+						<Skeleton />
 					</div>
 				) : (
 					<ul className="users-list">
