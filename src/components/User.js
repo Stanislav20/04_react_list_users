@@ -16,7 +16,7 @@ function User({ obj, onClickInvite, isInvited }) {
 					</p>
 				</div>
 			</div>
-			<img onClick={() => onClickInvite(obj.id)} className="action" src={`/assets/${isInvited ? 'minus.svg' : 'plus.svg'}`} alt="Action" />
+			<img onClick={() => onClickInvite(obj.id)} className="action" src={`../img/${isInvited ? 'minus.svg' : 'plus.svg'}`} alt="Action" />
 		</li>
 	)
 };
