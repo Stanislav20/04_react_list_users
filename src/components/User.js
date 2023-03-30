@@ -1,5 +1,7 @@
 import React from 'react';
 import './user.css'
+import minus from './image/minus.svg'
+import plus from './image/plus.svg'
 
 function User({ obj, onClickInvite, isInvited }) {
 	return (
@@ -16,7 +18,7 @@ function User({ obj, onClickInvite, isInvited }) {
 					</p>
 				</div>
 			</div>
-			<img onClick={() => onClickInvite(obj.id)} className="action" src={`/assets/${isInvited ? 'minus.svg' : 'plus.svg'}`} alt="Action" />
+			<img onClick={() => onClickInvite(obj.id)} className="action" src={`${isInvited ? minus : plus}`} alt="Action" />
 		</li>
 	)
 };
