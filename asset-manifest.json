@@ -1,13 +1,16 @@
 {
-  "main.css": "/04_react_list_users/static/css/main.ddd3f21f.chunk.css",
-  "main.js": "/04_react_list_users/static/js/main.bf2fe383.chunk.js",
-  "main.js.map": "/04_react_list_users/static/js/main.bf2fe383.chunk.js.map",
-  "static/js/1.65e1f80e.chunk.js": "/04_react_list_users/static/js/1.65e1f80e.chunk.js",
-  "static/js/1.65e1f80e.chunk.js.map": "/04_react_list_users/static/js/1.65e1f80e.chunk.js.map",
+  "main.css": "/04_react_list_users/static/css/main.b284a24e.chunk.css",
+  "main.js": "/04_react_list_users/static/js/main.f5c7a9b6.chunk.js",
+  "main.js.map": "/04_react_list_users/static/js/main.f5c7a9b6.chunk.js.map",
+  "static/js/1.b16914da.chunk.js": "/04_react_list_users/static/js/1.b16914da.chunk.js",
+  "static/js/1.b16914da.chunk.js.map": "/04_react_list_users/static/js/1.b16914da.chunk.js.map",
   "runtime~main.js": "/04_react_list_users/static/js/runtime~main.cfc64785.js",
   "runtime~main.js.map": "/04_react_list_users/static/js/runtime~main.cfc64785.js.map",
-  "static/css/main.ddd3f21f.chunk.css.map": "/04_react_list_users/static/css/main.ddd3f21f.chunk.css.map",
+  "static/media/success.svg": "/04_react_list_users/static/media/success.898d34a1.svg",
+  "static/media/minus.svg": "/04_react_list_users/static/media/minus.e06ee095.svg",
+  "static/media/plus.svg": "/04_react_list_users/static/media/plus.20384c87.svg",
+  "static/css/main.b284a24e.chunk.css.map": "/04_react_list_users/static/css/main.b284a24e.chunk.css.map",
   "index.html": "/04_react_list_users/index.html",
-  "precache-manifest.3984004703ae72b64ae854c11a4844b2.js": "/04_react_list_users/precache-manifest.3984004703ae72b64ae854c11a4844b2.js",
+  "precache-manifest.689911e81094293741ecc6b17dd8708e.js": "/04_react_list_users/precache-manifest.689911e81094293741ecc6b17dd8708e.js",
   "service-worker.js": "/04_react_list_users/service-worker.js"
 }
